@@ -1,0 +1,31 @@
+{
+  "name": "timetrackingproject",
+  "version": "1.0.0",
+  "description": "project that allow to track time for task projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulibethgo1404/TimeTrackingProject.git"
+  },
+  "keywords": [
+    "RestFul",
+    "API"
+  ],
+  "author": "Yulibeth Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulibethgo1404/TimeTrackingProject/issues"
+  },
+  "homepage": "https://github.com/yulibethgo1404/TimeTrackingProject#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
