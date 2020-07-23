@@ -22,10 +22,19 @@
   },
   "homepage": "https://github.com/yulibethgo1404/TimeTrackingProject#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25"
+    "mongoose": "^5.9.25",
+    "mongoose-unique-validator": "^2.0.3",
+    "sinon": "^9.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "settingsGlobal":{
+      "urlDatabase": "mongodb://localhost:27017/TaskTrackingdb",
+      "urlServer": "http://localhost:3000"
+
   }
 }

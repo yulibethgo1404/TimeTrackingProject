@@ -1,8 +1,27 @@
-var asserts = require('assert');
 
-describe('Test basico', function(){
+function preloadData() {
 
-    it('prueba de error', function () {
-       asserts.equal(2,2); 
+    var array = [{ username: 'usertest1' }, { username: 'usertest2' }];
+    User.create(array, function(err){
+      if(err) console.log(err);
+  
+      console.log("Users created");
     });
-})
+}  
+
+
+
+function importTest(name, path) {
+    describe(name, function () {
+        require(path);
+    });
+}
+
+describe('TimeTracking Controller', function () {
+
+//importTest("userController", './controllers/user.controller.spec');
+
+
+importTest("userController", './controllers/project.controller.spec');
+
+});
