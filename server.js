@@ -13,7 +13,7 @@ var express = require('express'),
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect(parameters.settingsGlobal.urlDatabase, {useNewUrlParser: true}); 
+mongoose.connect(parameters.settingsGlobal.urlDatabase); 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

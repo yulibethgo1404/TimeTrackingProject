@@ -21,7 +21,7 @@ describe('TimeTracking Controller', function () {
 
 //importTest("userController", './controllers/user.controller.spec');
 
-
-importTest("userController", './controllers/project.controller.spec');
+//importTest("userController", './controllers/project.controller.spec');
+importTest("userController", './controllers/task.controller.spec');
 
 });
